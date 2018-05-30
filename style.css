@@ -1,0 +1,271 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,600,400);
+
+/*nav-barre
+* {
+  box-sizing: border-box; /* pour maîtriser width et flex-basis *
+}*/
+:root {
+  --highlight1: #FF9933;
+  --highlight2: #FFF734;
+  --highlight3: #24C8F5;
+  --highlight4: #48D450;
+  --white: white;
+  --grey1: #333333;
+}
+
+body {
+    z-index: 0;
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto;
+  }
+select {
+  border-radius: 0px;
+  background-color: rgb(255, 216, 0);
+  border: 0px;
+  padding: 7px;
+  margin: 7px 0px;
+}
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    line-height:23px;
+    color: var(--grey1);
+    font-weight: 700;
+    margin: 7px;
+    text-transform: uppercase;
+}
+.fooChimere h2 {
+  font-size: 16px;
+}
+h2#nom {
+  position: absolute;
+  text-align: right;
+  right: 30px;
+  top: 50vh;
+}
+.aide {
+  width: 30px;;
+  padding: 7px 7px 7px 15px;
+  position: relative;
+}
+.aide p.instructions {
+  visibility: hidden;
+}
+.aide:hover p.instructions {
+  visibility: visible;
+}
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  line-height:17px;
+  letter-spacing: 1.5px;
+  color: var(--grey1);
+  font-weight: 500;
+  padding: 10px;
+}
+p.instructions {
+  position: absolute;
+  left: 30px;
+  bottom: 57px;
+  width: 320px;
+  background-color: rgba(255, 216, 0, 0.85);
+  z-index: 100;
+  font-weight: 700;
+  padding: 17px;
+}
+a {
+  cursor: pointer;
+}
+a:link {
+  color: unset;
+  text-decoration: none;
+}
+a:hover {
+  color: unset;
+  text-decoration: none;
+}
+a:visited {
+  color: var(--white);
+  text-decoration: none;
+}
+img {
+  margin-right: 150px;
+  height: 100%;
+}
+img {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+img.picto {
+  margin: 0px 5px;
+  height: 24px;
+}
+img.chim {
+  pointer-events: none;
+  user-select: none;
+  display: none;
+}
+img.mirror {
+  transform: scaleX(-1);
+       -moz-transform: scaleX(-1);
+        -ms-transform: scaleX(-1);
+         -o-transform: scaleX(-1);
+            transform: scaleX(-1);
+}
+img#tex {
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+}
+iframe {
+  height: 100%;
+  width: 100%;
+}
+.video {
+  width:124vh;
+  height:70vh;
+  margin-left:30px;
+}
+.tableau {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+.intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 100%;
+  margin: auto;
+  padding: 90 70 20 70;
+  margin-top: 20px;
+}
+.content {
+  box-sizing: border-box;
+  height: 100%;
+  margin: auto;
+  padding-bottom: 50px;
+}
+.fixed {
+  width: 100%;
+  position: relative;
+}
+.fixed img {
+  margin: 0px;
+}
+.demi {
+  width: 50%;
+  position: relative;
+  display:flex;
+  flex-direction:column;
+  height:100%
+}
+.demi .canvas {
+  width: 100%;
+}
+.transf-btn {
+  width: auto;
+  margin: auto;
+  background-color: unset;
+  border: unset;
+  cursor: pointer;
+  position: relative;
+}
+.canvas {
+  position:absolute;
+  user-select: none;
+}
+/*.draggable { - resize WIP
+  resize: both;
+  overflow: auto;
+}*/
+.draggable:hover .canvas {
+  visibility: visible;
+  }
+.draggable:hover {
+  opacity: 0.7;
+  background-image: radial-gradient(
+      circle,
+      rgba(255, 216, 0, 1),
+      rgba(255, 216, 0, 0),
+      rgba(255, 216, 0, 0)
+    );
+}
+
+.legend-box {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: auto;
+  align-items: center;
+  top: 60px;
+  left: 3vw;
+}
+.footer-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+  bottom: 0px;
+  z-index: 100;
+  position: fixed;
+  margin: auto;
+  background-color: var(--white);
+  box-shadow: 0px 30px 30px 4px #060606;
+}
+.footer-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: 51px;
+  z-index: 100;
+  position: fixed;
+  margin: auto;
+  background-color: var(--white);
+}
+.footer-2 h2 {
+  font-size: 15px;
+}
+.footer-button, .buttin, .buttact, .footer-div {
+  background-color: unset;
+  border: none;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0px 4px;
+  height: 44px;
+}
+.footer-button:hover, .aide:hover {
+  background-color: var(--highlight1);
+  color: var(--white);
+}
+.fooChimere .footer-button:hover {
+  background-color: none;
+  color: inherit;
+}
+.fooChimere {
+  position: relative;
+  width: inherit;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
