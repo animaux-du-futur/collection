@@ -39,28 +39,28 @@ function SetSelect($id,$type,$defaultName = null)
     </div>
 
     <div class="canvas draggable" id="dragOeuil">
-      <img class="chim" style="height:26vh" id="oeuil">
+      <img class="chim" style="height:26vh" onwheel="resize(event)" id="oeuil">
     </div>
     <div class="canvas draggable" id="dragOeuil2">
-      <img class="chim mirror" style="height:26vh" id="oeuil2">
+      <img class="chim mirror" style="height:26vh" onwheel="resize(event)" id="oeuil2">
     </div>
 		<div class="canvas draggable" id="dragOeuil3">
-      <img class="chim" style="height:26vh" id="oeuil3">
+      <img class="chim" style="height:26vh" onwheel="resize(event)" id="oeuil3">
     </div>
 
     <div class="canvas draggable" id="dragNez">
-      <img class="chim" style="height:20vh; margin-left:5px;" id="nez">
+      <img class="chim" style="height:20vh; margin-left:5px;" onwheel="resize(event)" id="nez">
     </div>
 
     <div class="canvas draggable" id="dragBou">
-      <img class="chim" style="height:24vh; margin-left:30px;" id="bou">
+      <img class="chim" style="height:24vh; margin-left:30px;" onwheel="resize(event)" id="bou">
     </div>
 
     <div class="canvas draggable" id="dragProt">
-      <img class="chim" style="height:39vh" id="prot">
+      <img class="chim" style="height:39vh" onwheel="resize(event)" id="prot">
     </div>
     <div class="canvas draggable" id="dragProt2">
-      <img class="chim mirror" style="height:39vh" id="prot2">
+      <img class="chim mirror" style="height:39vh" onwheel="resize(event)" id="prot2">
     </div>
   </div>
 </div>

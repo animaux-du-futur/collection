@@ -156,6 +156,7 @@ iframe {
   height: 100%;
   margin: auto;
   padding-bottom: 50px;
+  display: flex;
 }
 .fixed {
   width: 100%;
@@ -185,6 +186,9 @@ iframe {
 .canvas {
   position:absolute;
   user-select: none;
+}
+.draggable {
+  cursor: grab;
 }
 /*.draggable { - resize WIP
   resize: both;
