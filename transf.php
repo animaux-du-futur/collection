@@ -30,7 +30,7 @@ function SetSelect($id,$type,$defaultName = null)
 </head>
 
 <body>
-<div class="tableau">
+<div class="tableau transf">
 
   <div class="content fixed">
 
@@ -66,7 +66,7 @@ function SetSelect($id,$type,$defaultName = null)
 </div>
 
 
-<div class="footer-1"><div class="fooChimere">
+<div class="footer-1 transf"><div class="fooChimere">
 	<div class="aide">
 		<h2>???</h2>
 		<p class="instructions">\o/ Bienvenue sur la Chimère \o/<br>

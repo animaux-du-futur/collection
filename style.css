@@ -128,7 +128,6 @@ iframe {
 .video {
   width:124vh;
   height:70vh;
-  margin-left:30px;
 }
 .tableau {
     z-index: 1;
@@ -138,6 +137,7 @@ iframe {
     justify-content: center;
     align-content: stretch;
     position: absolute;
+    overflow: hidden;
     margin: auto;
     width: 100%;
     height: 100%;
@@ -154,9 +154,11 @@ iframe {
 .content {
   box-sizing: border-box;
   height: 100%;
+  width: 100%;
   margin: auto;
-  padding-bottom: 50px;
+  padding-bottom: 5em;
   display: flex;
+  overflow-x: auto;
 }
 .fixed {
   width: 100%;
@@ -254,8 +256,21 @@ iframe {
   max-width: 100%;
   display: flex;
   align-items: center;
-  padding: 0px 4px;
-  height: 44px;
+  padding: 0px 30px;
+  height: 5em;
+}
+.transf .footer-button, .transf .footer-div {
+  height: 30px;
+  padding: 0px 5px;
+}
+.transf .content {
+  padding-bottom: 30px;
+}
+.footer-button h2 {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 .footer-button:hover, .aide:hover {
   background-color: var(--highlight1);
@@ -272,4 +287,7 @@ iframe {
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
+}
+.mselect {
+  margin-right: 5px;
 }
