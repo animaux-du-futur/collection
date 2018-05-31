@@ -25,7 +25,8 @@ function SetSelect($id,$type,$defaultName = null)
 
 <html>
 <head>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style/main.css">
+  <link rel="stylesheet" href="style/transf.css">
   <meta charset="utf-8"/>
 </head>
 

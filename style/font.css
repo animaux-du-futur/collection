@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,600,400);
+
+/*nav-barre
+* {
+  box-sizing: border-box; /* pour maîtriser width et flex-basis *
+}*/
+:root {
+  --highlight1: #FF9933;
+  --highlight2: #FFF734;
+  --highlight3: #24C8F5;
+  --highlight4: #48D450;
+  --white: white;
+  --grey1: #333333;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    line-height:23px;
+    color: var(--grey1);
+    font-weight: 700;
+    margin: 7px;
+    text-transform: uppercase;
+}
+.fooChimere h2 {
+  font-size: 16px;
+}
+h2#nom {
+  position: absolute;
+  text-align: right;
+  right: 30px;
+  top: 50vh;
+}
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  line-height:17px;
+  letter-spacing: 1.5px;
+  color: var(--grey1);
+  font-weight: 500;
+  padding: 10px;
+}
+p.instructions {
+  position: absolute;
+  left: 30px;
+  bottom: 57px;
+  width: 320px;
+  background-color: rgba(255, 216, 0, 0.85);
+  z-index: 100;
+  font-weight: 700;
+  padding: 17px;
+}
+
+.footer-button h2 {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
