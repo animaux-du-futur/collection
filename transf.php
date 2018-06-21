@@ -28,6 +28,8 @@ function SetSelect($id,$type,$defaultName = null)
   <link rel="stylesheet" href="style/main.css">
   <link rel="stylesheet" href="style/transf.css">
   <meta charset="utf-8"/>
+  <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+  <script type='text/javascript' src='/js/jquery.mousewheel.min.js'></script>
 </head>
 
 <body>
