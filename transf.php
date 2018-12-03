@@ -30,6 +30,13 @@ function SetSelect($id,$type,$defaultName = null)
   <meta charset="utf-8"/>
   <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
   <script type='text/javascript' src='/js/jquery.mousewheel.min.js'></script>
+
+<style>
+.test {position:relative;}
+.test:hover .test-select {visibility: visible;}
+.test-select {position:absolute; visibility: hidden;}
+
+</style>
 </head>
 
 <body>
@@ -41,28 +48,32 @@ function SetSelect($id,$type,$defaultName = null)
       <img id="tex" src="images/chimere/foo.png">
     </div>
 
-    <div class="canvas draggable" id="dragOeuil">
-      <img class="chim" style="height:26vh" onwheel="resize(event)" id="oeuil">
+    <div class="canvas draggable" id="dragOeuil" style="left:30vw; top:15vh;">
+      <img class="chim" style="height:26vh" onwheel="resize(event)" id="oeuil2">
     </div>
-    <div class="canvas draggable" id="dragOeuil2">
-      <img class="chim mirror" style="height:26vh" onwheel="resize(event)" id="oeuil2">
+    <div class="canvas draggable" id="dragOeuil2" style="left:60vw; top:15vh;">
+      <img class="chim mirror" style="height:26vh" onwheel="resize(event)" id="oeuil">
     </div>
-		<div class="canvas draggable" id="dragOeuil3">
+		<div class="canvas draggable" id="dragOeuil3" style="left:; top:;">
       <img class="chim" style="height:26vh" onwheel="resize(event)" id="oeuil3">
     </div>
 
-    <div class="canvas draggable" id="dragNez">
-      <img class="chim" style="height:20vh; margin-left:5px;" onwheel="resize(event)" id="nez">
+    <div class="canvas draggable test" id="dragNez" style="left:40vw; top:30vh;">
+      <img class="chim" style="height:20vh; margin-left:5px;" onwheel="resize(event)" id="nez" >
+      <div class="test-select">
+        <img class="picto" src="images/chimere/pictos/pictNez.svg">
+        <?php SetSelect("Nez","nez"); ?>
+      </div>
     </div>
 
-    <div class="canvas draggable" id="dragBou">
+    <div class="canvas draggable" id="dragBou" style="left:43vw; top:55vh;">
       <img class="chim" style="height:24vh; margin-left:30px;" onwheel="resize(event)" id="bou">
     </div>
 
-    <div class="canvas draggable" id="dragProt">
+    <div class="canvas draggable" id="dragProt" style="left:; top:;">
       <img class="chim" style="height:39vh" onwheel="resize(event)" id="prot">
     </div>
-    <div class="canvas draggable" id="dragProt2">
+    <div class="canvas draggable" id="dragProt2" style="left:; top:;">
       <img class="chim mirror" style="height:39vh" onwheel="resize(event)" id="prot2">
     </div>
   </div>
@@ -89,8 +100,7 @@ function SetSelect($id,$type,$defaultName = null)
   </div>
 
   <div class="footer-div">
-		<img class="picto" src="images/chimere/pictos/pictNez.svg">
-    <?php SetSelect("Nez","nez"); ?>
+
   </div>
 
   <div class="footer-div">
