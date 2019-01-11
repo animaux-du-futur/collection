@@ -33,14 +33,40 @@ function SetSelect($id,$type,$defaultName = null)
 <body>
 <div class="tableau transf">
 
+  <div class="canvas" id="texture" style="width:100%; height:100%; overflow:hidden;">
+    <img id="tex" src="images/chimere/foo.png">
+  </div>
+
   <div class="content fixed">
 
-    <div class="canvas" id="texture" style="width:100%; height:100%; overflow:hidden;">
-      <img id="tex" src="images/chimere/foo.png">
-    </div>
 
-    <div class="canvas draggable" id="dragOeuil">
-      <img class="chim" style="height:26vh" onwheel="resize(event)" id="oeuil">
+
+    <!--div class="canvas draggable" id="dragOeuil" style="top:7vh; left:10vw; height:23vh;">
+      <div style="position:relative; width:100%; height:100%">
+      <img src="images/chimere/zoom-01.png" class="chi" style="height:25px; position:absolute; top:0px; left:0px">
+      <img src="images/chimere/organe/oeuil/multi-oeils.gif" class="chi" style="">
+      <div>
+    </div-->
+
+    <div class="canvas draggable test" id="dragOeuil" style="height:23vh;">
+      <div class="control test" style="position:relative;">
+        <img src="images/chimere/zoom-01.png" class="chi" style="height:25px; position:absolute; top:0px; left:0px">
+        <div class="mosaique test">
+          <button class="mosaique">
+            <img src="images/chimere/zoom-01.png">
+          </button>
+          <button class="mosaique">
+            <img src="images/chimere/zoom-01.png">
+          </button>
+          <button class="mosaique">
+            <img src="images/chimere/zoom-01.png">
+          </button>
+          <button class="mosaique">
+            <img src="images/chimere/zoom-01.png">
+          </button>
+        </div>
+      </div>
+      <img src="images/chimere/organe/oeuil/oeuil5.gif" class="chim test" id="oeuil">
     </div>
     <div class="canvas draggable" id="dragOeuil2">
       <img class="chim mirror" style="height:26vh" onwheel="resize(event)" id="oeuil2">
